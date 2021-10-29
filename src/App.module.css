@@ -1,0 +1,60 @@
+.os_screen_size{
+    display: grid;
+    width: 375px;
+    height: 812px;
+    background-color: red;
+    grid-template-rows: 30px auto 40px;
+    grid-template-areas:
+            "header"
+            "main"
+            "footer";
+    z-index: 1;
+}
+.animation{
+    display: flex;
+    position: absolute;
+    width: 375px;
+    height: 812px;
+    background-color: #008000;
+    left: 0px;
+    top: 0px;
+    z-index: 2;
+}
+.open{
+    display: none;
+}
+header{
+    background-color: green;
+    grid-area: header;
+}
+main{
+    display: grid;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto;
+    grid-row-gap: 31.17px;
+    grid-column-gap: 15px;
+    grid-area: main;
+    background-color: yellow;
+    padding: 15px;
+}
+footer{
+    grid-area: footer;
+    background-color: blue;
+}
+.app{
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: green;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+.app-false{
+    display: none;
+}
+.app_window{
+    width: 100%;
+    height: 100%;
+}
